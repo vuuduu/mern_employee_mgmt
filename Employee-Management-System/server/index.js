@@ -26,17 +26,11 @@ db.once("open", function () {
   console.log("Connected successfully");
 });
 
-
-
 app.use('/employee', getEmployees)
 app.use('/employee', createEmployee)
 app.use('/employee', updateEmployee)
 app.use('/employee', deleteEmployee)
 app.use('/searchemployee', searchEmployee)
 app.use('/employee', getEmployeeById)
-
-
-
-
 
 app.listen(3100, ()=>console.log('server started in port 3100'))
